@@ -1,0 +1,11 @@
+[project]
+name = "{{ project_slug }}"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "json"
+]
+
+[project.scripts]
+{{ project_slug }}-server = "{{ project_slug }}.cli:main"

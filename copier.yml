@@ -1,0 +1,9 @@
+project_name:
+  type: str
+  help: "Human-readable project name"
+  default: "AI Service Project"
+
+project_slug:
+  type: str
+  help: "Python package name (kebab-case)"
+  default: "{{ project_name | lower | replace(' ', '-') }}"
